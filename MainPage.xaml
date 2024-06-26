@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label x:Name = "Title"  HeightRequest="50" Text=""
+                   FontSize="40" TextColor="White"/>
+
+            <Button x:Name="b1"
+                    Text="Settings" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Settings"/>
+            <Button x:Name="b2"
+                    Text="My Plans" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Plans"/>
+            <Button x:Name="b3"
+                    Text="My Accounting" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Accounting"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

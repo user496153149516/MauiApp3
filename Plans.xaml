@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Plans"
+             Title="Plans">
+    <ScrollView x:Name="back">
+        <VerticalStackLayout >
+            <VerticalStackLayout Spacing="25" VerticalOptions="Start" x:Name="stackTop">
+                <Label x:Name = "Title"  HeightRequest="50" Text="Мої Справи / Плани"
+                   FontSize="30" TextColor="White"/>
+                <HorizontalStackLayout  HorizontalOptions="Center">
+                    <Button x:Name="b1"
+                    Text="Back" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Back"/>
+                    <Button x:Name="b2"
+                    Text="Settings" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Settings"/>
+                    <Button x:Name="b3"
+                    Text="My Accounting" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Accounting"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="25" x:Name="stackBottom" HorizontalOptions="Center">
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

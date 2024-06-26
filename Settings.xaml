@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.Settings"
+             Title="Settings">
+    <ScrollView x:Name = "back">
+        <VerticalStackLayout VerticalOptions="Start" Spacing="25">
+            <Label x:Name="Title" HeightRequest="50" Text="Додати"
+                   FontSize="30" TextColor="White"
+                   BackgroundColor="{DynamicResource Key=FirstColor}"/>
+            <HorizontalStackLayout  HorizontalOptions="Center">
+
+                <Button x:Name="b1"
+                    Text="Back" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Back"/>
+                <Button x:Name="b2"
+                    Text="My Plans" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Plans"/>
+                <Button x:Name="b3"
+                    Text="My Accounting" FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Accounting"/>
+
+            </HorizontalStackLayout>
+            <Picker x:Name="ItemPicker" Title = "Category OR Plan"
+                SelectedIndexChanged="PickerSelectedIndexChanged" HorizontalOptions="Center">
+                <Picker.Items>
+                    <x:String>Category</x:String>
+                    <x:String>Plan</x:String>
+                    <x:String>Cost</x:String>
+                    <x:String>Profit</x:String>
+                </Picker.Items>
+            </Picker>
+            <VerticalStackLayout x:Name="stack" HorizontalOptions="Center">
+            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="stack2" HorizontalOptions="Center">
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
